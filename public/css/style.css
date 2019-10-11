@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs&display=swap&subset=latin-ext');
+
+body{
+  font-family: 'Mouse Memoirs', sans-serif;
+  background: #F1D5A5;
+  color: #523118;
+  width: 100%;
+  height: 100%;
+}
+.header {
+    text-align: center;
+    padding: 1em 0 2em;
+    background-image: repeating-linear-gradient(45deg, #5f391c, #5f391c 100px, #865127 100px, #865127 200px);
+    color: #f0dccd;
+    box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0.25) inset;
+}
+.header a {
+  font-family: 'Mouse Memoirs', sans-serif;
+  color: #f0dccd;
+  font-size: 2em;
+  text-decoration: none;
+  margin: 0 20px;
+}
+.header p {
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.cart-container {
+  width: 100%;
+  height: 280px;
+  display: table;
+}
+.cart-container .empty {
+  font-size: 3em;
+  width: 100%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.cart {
+  /* list-style: none;
+  height: 280px;
+  width: 10000px;
+  cursor: grab; */
+  position: relative;
+  /* left: 0; */
+  transform: translate3d(0, 0, 0);
+}
+.cart .product {
+  position: relative;
+  /* width: 200px; */
+  /* height: 280px; */
+  float: left;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.cart .product:hover {
+  z-index: 1;
+}
+.cart .product:nth-child(3n+1) .product-preview {
+  background: #E8B0AF;
+}
+.cart .product:nth-child(3n+2) .product-preview {
+  background: #FDDAC4;
+}
+.cart .product:nth-child(3n) .product-preview {
+  background: #f7e1d3;
+}
+.cart .product .product-preview {
+  padding: 1em;
+  height: 280px;
+  position: relative;
+}
+.cart .product .product-preview .thumbnail {
+  width: 100%;
+  min-height: 120px;
+  max-height: 200px;
+}
+.cart .product .product-preview .thumbnail .image {
+  width: 100%;
+  margin-top: 1em;
+}
+.cart .product .product-preview .product-paper {
+  position: absolute;
+  /* height: 75px; */
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 0.4em;
+  display: block;
+  width: 100%;
+  margin-left: -1em;
+}
+.cart .product .product-preview .product-name {
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Mouse Memoirs', sans-serif;
+  line-height: 1;
+}
+.cart .product .product-preview .product-price {
+  text-align: center;
+  font-size: 1.4em;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+.cart .product .product-quantity {
+  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  padding: 0.35em 0;
+  border-radius: 1em;
+  position: absolute;
+  top: -12px;
+  right: 0;
+  background: #fff;
+  transform: rotateZ(10deg);
+  backface-visibility: hidden;
+}
+.cart .product:hover .product-interactions, .cart .product .visible {
+  opacity: 1 !important;
+  transform: perspective(600px) rotateX(0deg) !important;
+}
+.cart .product .product-interactions {
+  /* position: absolute; */
+  bottom: 75px;
+  width: 100%;
+  height: 60px;
+  border-top: 1px dashed rgb(218, 218, 218);
+  transform-origin: 50% 100% 0;
+  /* transform: perspective(600px) rotateX(90deg) !important; */
+  /* opacity: 0; */
+  transition: 0.4s all ease-in-out;
+  display: table;
+}
+.cart .product .product-interactions .button {
+  width: 100%;
+  height: 60px;
+  float: left;
+  text-align: center;
+  font-size: 4em;
+  line-height: 0.75em;
+  color: #67b17a;
+  background: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+  user-select: none;
+  transition: 0.1s all ease-in-out;
+  transform-origin: 50% 0 0;
+  transform: perspective(600px);
+  z-index: 0;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+.cart .product .product-interactions .button  i{
+  font-size: 0.5em;
+}
+.cart .product .product-interactions .button.plus {
+  color: #7fb034;
+}
+.cart .product .product-interactions .button.minus {
+  color: #fa767c;
+}
+.cart .product .product-interactions .button.del:after {
+  content: "+";
+  position: absolute;
+  color: red;
+  left: 50%;
+  margin-left: -0.15em;
+  transform: rotateZ(45deg);
+}
+.cart .product .product-interactions .button:nth-child(1), .cart .product .product-interactions .button:nth-child(2) {
+  border-right: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.cart .product .product-interactions .button:nth-child(2) {
+  width: 36%;
+}
+.cart .product .product-interactions .button:active {
+  font-size: 7em;
+  background: #fff !important;
+  box-shadow: 0 0 0 10px #fff !important;
+  z-index: 10;
+  line-height: 0.45em;
+}
+.cart .product .product-interactions .button:hover {
+  background: rgb(102, 177, 122);
+  color: #fff;
+}
+
+.bill {
+  margin: 0;
+  padding: 1em;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  margin: 30px 0;
+  color: #48320b;
+  width: 100%;
+}
+.bill .total {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+.bill tr td {
+  width: 50%;
+  padding: 0.25em 20px;
+}
+.bill tr .label {
+  text-align: right;
+}
+
+.actions {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 6em;
+}
+/* .actions .big-button {
+  position: absolute;
+  cursor: pointer;
+  user-select: none;
+  padding: 1em;
+  width: 100%;
+  font-size: 1.5em;
+  transition: 0.1s all ease-in-out;
+  box-shadow: 0 0 0 0 #6c411f;
+} */
+.actions .big-button:active {
+  z-index: 10;
+  font-size: 2em;
+}
+.actions .big-button.return {
+  background: #ad6932;
+  color: #f0dccd;
+}
+.actions .big-button.return:hover {
+  background: #6c411f;
+}
+.actions .big-button.return:before {
+  content: "←";
+}
+.actions .big-button.go {
+  background: #a0ce5a;
+  color: #334715;
+  font-size: 4em;
+}
+.actions .big-button.go:hover {
+  background: #7fb034;
+}
+.actions .big-button.go:active {
+  font-size: 2.5em;
+  background: #bede8e;
+  box-shadow: 0 0 0 10px #bede8e;
+}
+.single-product .detail {
+    padding: 40px 0;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 28px;
+    text-align: justify;
+}
+.single-product {
+    background: #efdccd;
+    margin: 80px 160px;
+}
+.single-product .product-interactions {
+  /* position: absolute; */
+  bottom: 75px;
+  width: 50%;
+  height: 60px;
+  border-top: 1px dashed rgba(0, 0, 0, 0.4);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+  transform-origin: 50% 100% 0;
+  /* transform: perspective(600px) rotateX(90deg) !important; */
+  /* opacity: 0; */
+  transition: 0.4s all ease-in-out;
+  display: table;
+  margin: 0 auto;
+}
+.single-product .product-interactions .button, .cart .product-interactions .button {
+  width: 32%;
+  text-align: center;
+  font-size: 4em;
+  line-height: 0.75em;
+  color: #67b17a;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.1s all ease-in-out;
+  transform-origin: 50% 0 0;
+  transform: perspective(600px);
+  z-index: 0;
+  position: relative;
+  display: table-cell;
+}
+.single-product .product-interactions .button  i, .cart .product-interactions .button  i{
+  font-size: 0.5em;
+}
+.single-product .product-interactions .button.plus, .cart .product-interactions .button.plus {
+  color: #7fb034;
+}
+.single-product .product-interactions .button.minus, .cart .product-interactions .button.minus  {
+  color: #fa767c;
+}
+.single-product .product-interactions .button.del:after {
+  content: "+";
+  position: absolute;
+  color: red;
+  left: 50%;
+  margin-left: -0.15em;
+  transform: rotateZ(45deg);
+}
+.single-product .product-interactions .button.count, .cart .product-interactions .button.count {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 2em;
+    color: #5f381b;
+}
+.single-product .product-interactions .button.cart{
+    padding: 0 19px;
+}
+.single-product h1 {
+    color: #66b17a;
+    font-size: 2.5em;
+}
+.single-product .product-image {
+    max-width: 320px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+small.qty {
+    background: #f93b30;
+    width: 10px;
+    height: 10px;
+    padding: 0 9px;
+    border-radius: 100px;
+    font-size: 20px;
+    position: relative;
+    top: -17px;
+    left: -10px;
+}
+.single-product .product-interactions .button:hover {
+    opacity: 0.8;
+}
+.single-product .product-image p {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 30px;
+}
+.cart {
+    margin: 40px 0;
+    font-family: 'Mouse Memoirs', sans-serif;
+}
+.cart h1 {
+    font-size: 3em;
+    text-align: left;
+}
+.cart  .cart-item {
+    background: #fff0e5;
+    margin: 20px 0;
+}
+.cart-item .thumbnail {
+    width: 130px;
+    margin: 30px;
+}
+.cart-item .details {
+    margin: 40px 0;
+    text-align: left;
+    position: relative;
+}
+.cart-item .details p {
+    font-size: 1.5em;
+    color: rgb(102, 177, 122);
+}
+.cart-item .product-interactions .delete {
+    color: #ff565e;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.cart .product-interactions .button {
+    width: 26%;
+}
+.cart-item .product-interactions {
+    margin: 40px 0;
+    position: relative;
+}
+.cart .cart-item p {
+    font-size: 1.5em;
+    margin: 30px 0;
+}
+.row.cart-item .button-shop {
+    background: #a0ce5a;
+    padding: 12px 20px;
+    font-size: 1.5em;
+    width: 30%;
+    margin: 20px auto;
+}
+.row.cart-item .button-shop:hover{
+    background: #7fb034
+}
+.row.cart-item .button-shop a{
+    color: #fff;
+    text-decoration: none;
+}

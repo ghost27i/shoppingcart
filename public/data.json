@@ -1,0 +1,74 @@
+{
+  "data":[
+      {
+        "id":1,
+        "name":"Cupcake",
+        "price":"175.00",
+        "image":"/images/sidebar-cupcake.png",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida aliquet dignissim. Phasellus auctor mi ut quam accumsan maximus. Curabitur sed mauris venenatis, semper ex in, sagittis nisl. Vivamus mollis arcu non ipsum feugiat molestie. Praesent euismod erat aliquet, scelerisque justo non, elementum tortor."
+      },
+      {
+        "id":2,
+        "name":"Coffee",
+        "price":"140.00",
+        "image":"/images/ponytails-coffee-time-coffee-cup3.png",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida aliquet dignissim. Phasellus auctor mi ut quam accumsan maximus. Curabitur sed mauris venenatis, semper ex in, sagittis nisl. Vivamus mollis arcu non ipsum feugiat molestie. Praesent euismod erat aliquet, scelerisque justo non, elementum tortor."
+      },
+      {
+        "id":3,
+        "name":"Chocolate",
+        "price":"230.00",
+        "image":"/images/Chocolate.png",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida aliquet dignissim. Phasellus auctor mi ut quam accumsan maximus. Curabitur sed mauris venenatis, semper ex in, sagittis nisl. Vivamus mollis arcu non ipsum feugiat molestie. Praesent euismod erat aliquet, scelerisque justo non, elementum tortor."
+      },
+      {
+        "id":4,
+        "name":"Waffle",
+        "price":"255.00",
+        "image":"/images/waffle-homestyle.png",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida aliquet dignissim. Phasellus auctor mi ut quam accumsan maximus. Curabitur sed mauris venenatis, semper ex in, sagittis nisl. Vivamus mollis arcu non ipsum feugiat molestie. Praesent euismod erat aliquet, scelerisque justo non, elementum tortor."
+      },
+      {
+        "id":5,
+        "name":"Donuts",
+        "price":"145.00",
+        "image":"/images/donuts.png",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida aliquet dignissim. Phasellus auctor mi ut quam accumsan maximus. Curabitur sed mauris venenatis, semper ex in, sagittis nisl. Vivamus mollis arcu non ipsum feugiat molestie. Praesent euismod erat aliquet, scelerisque justo non, elementum tortor."
+      },
+      {
+        "id":6,
+        "name":"Lemon Pie",
+        "price":"580.00",
+        "image":"/images/tarte-au-citron.png",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida aliquet dignissim. Phasellus auctor mi ut quam accumsan maximus. Curabitur sed mauris venenatis, semper ex in, sagittis nisl. Vivamus mollis arcu non ipsum feugiat molestie. Praesent euismod erat aliquet, scelerisque justo non, elementum tortor."
+      },
+      {
+        "id":7,
+        "name":"Sorbet",
+        "price":"350.00",
+        "image":"/images/raspberry-sorbet.png",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida aliquet dignissim. Phasellus auctor mi ut quam accumsan maximus. Curabitur sed mauris venenatis, semper ex in, sagittis nisl. Vivamus mollis arcu non ipsum feugiat molestie. Praesent euismod erat aliquet, scelerisque justo non, elementum tortor."
+      },
+      {
+        "id":8,
+        "name":"French Croissant",
+        "price":"170.00",
+        "image":"/images/croissant-psd49504.png",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida aliquet dignissim. Phasellus auctor mi ut quam accumsan maximus. Curabitur sed mauris venenatis, semper ex in, sagittis nisl. Vivamus mollis arcu non ipsum feugiat molestie. Praesent euismod erat aliquet, scelerisque justo non, elementum tortor."
+      },
+      {
+        "id":9,
+        "name":"Macaron",
+        "price":"485.00",
+        "image":"/images/Macaron.png",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida aliquet dignissim. Phasellus auctor mi ut quam accumsan maximus. Curabitur sed mauris venenatis, semper ex in, sagittis nisl. Vivamus mollis arcu non ipsum feugiat molestie. Praesent euismod erat aliquet, scelerisque justo non, elementum tortor."
+      },
+      {
+        "id":10,
+        "name":"Mille-feuille",
+        "price":"220.00",
+        "image":"/images/millefeuille-vanille.png",
+        "detail":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida aliquet dignissim. Phasellus auctor mi ut quam accumsan maximus. Curabitur sed mauris venenatis, semper ex in, sagittis nisl. Vivamus mollis arcu non ipsum feugiat molestie. Praesent euismod erat aliquet, scelerisque justo non, elementum tortor."
+      }
+    ]
+}
