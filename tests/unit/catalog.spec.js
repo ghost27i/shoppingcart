@@ -1,8 +1,7 @@
 import Vuex from 'vuex';
 import { shallow, createLocalVue, shallowMount } from '@vue/test-utils'
 import Catalog from '@/views/Catalog.vue'
-// import {actions, mutations} from '../../src/store/store.js'
-import {actions, mutations} from '@/store/store.js'
+import {actions, mutations} from '@/store/store'
 
 const localVue = createLocalVue()
 localVue.use(Vuex)
